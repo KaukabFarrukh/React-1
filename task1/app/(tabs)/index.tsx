@@ -9,23 +9,23 @@ import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
   return (
-    <View style={ styles.container } >
-
+    <View style={styles.container}>
+      
       {/* Top Red Box */}
       <View style={styles.topRedBox}>
         <Text style={styles.text}>RÖD</Text>
       </View>
 
-       {/* Middle Row with Green and Yellow Boxes */}
-       <View style={styles.middleRow}>
+      {/* Middle Row with Green and Yellow Boxes */}
+      <View style={styles.middleRow}>
         <View style={styles.greenBox}>
           <Text style={styles.text}>GRÖN</Text>
         </View>
         <View style={styles.yellowBox} />
       </View>
 
-      {/* Buttom Row with Red and Black Boxes */}
-      <View style={styles.bottomRow}>
+      {/* Lower Row with Small Red and Black Boxes */}
+      <View style={styles.lowerRow}>
         <View style={styles.smallRedBox} />
         <View style={styles.smallBlackBox} />
       </View>
@@ -33,10 +33,11 @@ export default function HomeScreen() {
       {/* Large Blue Box */}
       <View style={styles.largeBlueBox} />
 
-      {/* Buttom Orange Box */}
+      {/* Bottom Orange Box */}
       <View style={styles.bottomOrangeBox}>
         <Text style={styles.text}>ORANGE</Text>
       </View>
+
     </View>
   );
 }
@@ -49,31 +50,31 @@ const styles = StyleSheet.create({
 
   topRedBox: {
     flex: 2,
-    backgroundColor: '#FF6347',
-    justifyContent: 'center'
-    alignItems: "center",
+    backgroundColor: '#FF6347', // Red color
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
-  middlerow: {
+  middleRow: {
     flexDirection: 'row',
-    flex: 1
+    flex: 1,
   },
 
   greenBox: {
     flex: 1,
-    backgroundColor: '#32CD32', 
+    backgroundColor: '#32CD32', // Green color
     justifyContent: 'center',
     alignItems: 'center',
   },
 
   yellowBox: {
     flex: 1,
-    backgroundColor: '#FFD700', 
+    backgroundColor: '#FFD700', // Yellow color
   },
 
-  buttomRow: {
-    flexDirection: row,
-    flex: 0.5, 
+  lowerRow: {
+    flexDirection: 'row',
+    flex: 0.5,
   },
 
   smallRedBox: {
@@ -88,14 +89,14 @@ const styles = StyleSheet.create({
 
   largeBlueBox: {
     flex: 5,
-    backgroundColor: '#87CEEB', 
+    backgroundColor: '#87CEEB', // Large blue box color
   },
 
-  buttomOrangeBox: {
+  bottomOrangeBox: {
     flex: 0.5,
     backgroundColor: '#FFA500', // Orange color
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   text: {
@@ -103,6 +104,8 @@ const styles = StyleSheet.create({
     color: '#000',
   },
 });
-    
-    
+
+ 
+  
+ 
 
